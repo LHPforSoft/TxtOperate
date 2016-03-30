@@ -12,6 +12,7 @@ namespace TxtOperate
         public void OpenFile()
         {
             //
+
         }
         public void SaveFile()
         {

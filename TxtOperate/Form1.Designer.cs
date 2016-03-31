@@ -28,31 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOpenFile = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.btnSaveTxt = new System.Windows.Forms.Button();
+            this.btnCreatTxt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOpenFile
             // 
-            this.button1.Location = new System.Drawing.Point(84, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOpenFile.Location = new System.Drawing.Point(294, 12);
+            this.btnOpenFile.Name = "btnOpenFile";
+            this.btnOpenFile.Size = new System.Drawing.Size(75, 23);
+            this.btnOpenFile.TabIndex = 0;
+            this.btnOpenFile.Text = "打开文件";
+            this.btnOpenFile.UseVisualStyleBackColor = true;
+            this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // btnSaveTxt
+            // 
+            this.btnSaveTxt.Location = new System.Drawing.Point(416, 11);
+            this.btnSaveTxt.Name = "btnSaveTxt";
+            this.btnSaveTxt.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveTxt.TabIndex = 1;
+            this.btnSaveTxt.Text = "保存文本";
+            this.btnSaveTxt.UseVisualStyleBackColor = true;
+            this.btnSaveTxt.Click += new System.EventHandler(this.btnSaveTxt_Click);
+            // 
+            // btnCreatTxt
+            // 
+            this.btnCreatTxt.Location = new System.Drawing.Point(160, 12);
+            this.btnCreatTxt.Name = "btnCreatTxt";
+            this.btnCreatTxt.Size = new System.Drawing.Size(75, 23);
+            this.btnCreatTxt.TabIndex = 2;
+            this.btnCreatTxt.Text = "创建文本";
+            this.btnCreatTxt.UseVisualStyleBackColor = true;
+            this.btnCreatTxt.Click += new System.EventHandler(this.btnCreatTxt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(624, 284);
+            this.Controls.Add(this.btnCreatTxt);
+            this.Controls.Add(this.btnSaveTxt);
+            this.Controls.Add(this.btnOpenFile);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -62,9 +86,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOpenFile;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button btnSaveTxt;
+        private System.Windows.Forms.Button btnCreatTxt;
     }
 }
 
